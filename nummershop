@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NummernShop DE | +49 Vodafone Pakete</title>
+  <style>
+    :root { --vodafone: #E60000; --green: #075E54; --accent: #25D366; --bg: #F7F9FA; }
+    * { margin:0; padding:0; box-sizing:border-box; font-family: 'Segoe UI', Roboto, sans-serif; scroll-behavior:smooth; }
+    body { background: var(--bg); color:#222; }
+    .container { max-width:1000px; margin:0 auto; padding:20px; }
+
+    nav { position:sticky; top:0; background:white; padding:15px 20px; box-shadow:0 2px 10px rgba(0,0,0,0.1); z-index:1000; display:flex; justify-content:space-between; align-items:center; border-radius:0 0 15px 15px; }
+    nav .logo { font-weight:800; color:var(--vodafone); font-size:20px; }
+    nav ul { list-style:none; display:flex; gap:20px; }
+    nav a { text-decoration:none; color:#333; font-weight:600; }
+    nav a:hover { color:var(--vodafone); }
+
+    section { background:white; padding:50px 40px; border-radius:20px; margin:30px 0; box-shadow:0 5px 20px rgba(0,0,0,0.05); }
+    .hero { background:linear-gradient(135deg, var(--vodafone) 0%, #B30000 100%); color:white; text-align:center; }
+    .hero h1 { font-size:36px; margin-bottom:10px; }
+    .badge { background:#FFA000; padding:8px 16px; border-radius:20px; display:inline-block; margin-top:10px; font-weight:700; }
+
+    .btn { display:inline-block; background:var(--accent); color:white; padding:16px 28px; border-radius:12px; text-decoration:none; font-weight:700; font-size:16px; transition:0.2s; margin:8px; }
+    .btn:hover { transform:translateY(-2px); box-shadow:0 5px 15px rgba(37,211,102,0.4); }
+    .sticky-btn { position:fixed; bottom:20px; right:20px; background:var(--accent); color:white; padding:15px 20px; border-radius:50px; font-weight:700; box-shadow:0 5px 20px rgba(0,0,0,0.2); z-index:999; text-decoration:none; }
+    
+    .pakete { display:grid; grid-template-columns:repeat(3, 1fr); gap:20px; }
+    .paket-card { border:2px solid #eee; border-radius:15px; padding:25px; text-align:center; transition:0.3s; }
+    .paket-card:hover { border-color:var(--vodafone); transform:translateY(-5px); }
+    .paket-card h3 { color:var(--vodafone); margin-bottom:10px; }
+    .preis { font-size:36px; font-weight:800; color:var(--green); }
+    .vorwahl { font-size:20px; font-weight:700; color:#333; background:#F1F8E9; padding:10px; border-radius:8px; margin:15px 0; }
+
+    footer { text-align:center; padding:30px; font-size:13px; color:#777; }
+    @media(max-width:768px){ nav ul{display:none;} .pakete{grid-template-columns:1fr;} }
+  </style>
+</head>
+<body>
+
+<a class="sticky-btn" href="https://wa.me/4915233509884" target="_blank">💬 Support</a>
+
+<nav>
+  <div class="logo">📱 NummernShop DE</div>
+  <ul>
+    <li><a href="#start">Start</a></li>
+    <li><a href="#pakete">Pakete</a></li>
+    <li><a href="#kontakt">Kontakt</a></li>
+  </ul>
+</nav>
+
+<div class="container">
+  <section class="hero" id="start">
+    <h1>Premium +49 Vodafone Nummern</h1>
+    <p>Deutsche Mobilfunk Vorwahlen. Lieferung in 24h. Für WhatsApp Business.</p>
+    <div class="badge">⚡ Sofortige Bereitstellung</div><br>
+    <a class="btn" href="#pakete">Pakete ansehen</a>
+  </section>
+
+  <section id="pakete">
+    <h2 style="text-align:center; margin-bottom:30px;">Wählen Sie Ihr Paket</h2>
+    <div class="pakete">
+      
+      <div class="paket-card">
+        <h3>Starter Paket</h3>
+        <div class="vorwahl">Vorwahl: +49 151</div>
+        <div class="preis">5,00 €</div>
+        <p>Einmalig</p>
+        <ul style="list-style:none; text-align:left; margin:15px 0;">
+          <li>✓ Vodafone +49 151X Vorwahl</li>
+          <li>✓ Lieferung in 24h</li>
+          <li>✓ WhatsApp kompatibel</li>
+        </ul>
+        <a class="btn" href="https://wa.me/4915233509884?text=Hallo%20ich%20moechte%20das%20Starter%20Paket%20%2B49%20151%20fuer%205%20EUR" target="_blank">Jetzt kaufen</a>
+      </div>
+
+      <div class="paket-card" style="border:2px solid var(--vodafone);">
+        <h3>Business Paket</h3>
+        <div class="vorwahl">Vorwahl: +49 160</div>
+        <div class="preis">7,00 €</div>
+        <p>Einmalig | Meist gewählt</p>
+        <ul style="list-style:none; text-align:left; margin:15px 0;">
+          <li>✓ Vodafone +49 160X Vorwahl</li>
+          <li>✓ Priorisierte Lieferung in 12h</li>
+          <li>✓ Einrichtungshilfe für WhatsApp Business</li>
+        </ul>
+        <a class="btn" href="https://wa.me/4915233509884?text=Hallo%20ich%20moechte%20das%20Business%20Paket%20%2B49%20160%20fuer%207%20EUR" target="_blank">Jetzt kaufen</a>
+      </div>
+
+      <div class="paket-card">
+        <h3>Pro Paket</h3>
+        <div class="vorwahl">Vorwahl: +49 173</div>
+        <div class="preis">10,00 €</div>
+        <p>Einmalig</p>
+        <ul style="list-style:none; text-align:left; margin:15px 0;">
+          <li>✓ Vodafone +49 173X Premium Vorwahl</li>
+          <li>✓ Lieferung in 6h</li>
+          <li>✓ VIP Support</li>
+        </ul>
+        <a class="btn" href="https://wa.me/4915233509884?text=Hallo%20ich%20moechte%20das%20Pro%20Paket%20%2B49%20173%20fuer%2010%20EUR" target="_blank">Jetzt kaufen</a>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="kontakt">
+    <h2>Kontakt & Support</h2>
+    <p style="text-align:center; margin-bottom:20px;">Fragen? Schreiben Sie uns auf WhatsApp:</p>
+    <div style="text-align:center;">
+      <a class="btn" href="https://wa.me/4915233509884" target="_blank">💬 +49 1523 3509884</a>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 NummernShop DE | Impressum | Datenschutz<br>
+    Service für SIM-Karten Vermittlung und Aktivierungshilfe.
+  </footer>
+</div>
+
+</body>
+</html>
